@@ -1,0 +1,247 @@
+@font-face {
+    font-family: segoe;
+    src: url('/fonts/Segoe\ UI.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: segoe;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*==================
+    header style 
+====================*/
+header{
+    height: 56px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: 0 12px 12px #f0f2f5;
+    border-bottom: #fff;
+}
+.logo_area{
+    display: flex;
+    align-items: center;
+    margin: 8px 15px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+}
+.search_field{
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 40px;
+    background-color: #f0f2f5;
+    border-radius: 25px;
+    padding: 8px 8px;
+    margin-left: 8px;
+}
+.search_field input{
+    width: 252px;
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+    margin-left: 10px;
+
+}
+.search_field input::placeholder{
+    color: #606770;
+    font-size: 16px;
+}
+.search_field span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #606770;
+    font-size: 24px;
+    font-weight: 500px;
+    margin-left: 5px;
+}
+/* Middle style */
+.middle_area ul{
+    display: flex;
+    align-items: center;
+}
+.middle_area ul li{
+    margin: 0 5px;
+    position: relative;
+}
+.middle_area ul li a span{
+    font-size: 32px;
+    color: #606770;
+}
+.middle_area ul li a{
+    display: inline-block;
+    padding: 10 30px;
+    padding: 6px 34px;
+    border-radius: 10px;
+    position: relative;
+}
+.middle_area ul li a:hover{
+    background-color: #f0f2f5;
+}
+.middle_area ul li .item-one::after {
+    content: "9+";
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e41e3f;
+    border-radius: 15px;
+    padding: 2px 6px;
+    right: 22px;
+    bottom: 31px;
+    position: absolute;
+}
+
+
+.middle_area ul li .item-two::after {
+    content: "3+";
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e41e3f;
+    border-radius: 15px;
+    padding: 2px 6px;
+    right: 22px;
+    bottom: 31px;
+    position: absolute;
+}
+.middle_area ul li:hover::after {
+    content: attr(data-tag);
+    outline: 0;
+    border: 0;
+    color: #dadada;
+    background-color: #313131eb;
+    position: absolute;
+    bottom: -42px;
+    left: 18%;
+    padding: 6px 11px;
+    border-radius: 10px;
+    opacity: 1;
+    transform: translateX(50%px);
+}
+/* main_name_logo style */
+.main_name_logo ul{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.main_name_logo ul li{
+    margin: 0 5px;
+}
+.profile a img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.main_name_logo ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+}
+.main_name_logo ul li a{
+    border-radius: 25px;
+    padding: 4px 8px 4px 5px;
+}
+.main_name_logo ul li a:hover{
+    background-color: #f0f2f5;
+}
+.main_name_logo ul li a span{
+   padding-left: 6px;
+}
+.main_name_logo ul .apps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #f0f2f5;
+}
+.main_name_logo ul .apps:hover{
+    background-color: #d8dbe2;
+}
+.main_name_logo ul .fab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #f0f2f5;
+    position: relative;
+}
+.main_name_logo ul .fab:hover{
+    background-color: #d8dbe2;
+}
+.main_name_logo ul .fab::after {
+    content: "6";
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e41e3f;
+    border-radius: 15px;
+    padding: 3px 6px;
+    right: 0px;
+    bottom: 29px;
+    position: absolute;
+}
+.main_name_logo ul .bell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #f0f2f5;
+    position: relative;
+}
+.main_name_logo ul .bell:hover{
+    background-color: #d8dbe2;
+}
+.main_name_logo ul .bell::after {
+    content: "20+";
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #e41e3f;
+    border-radius: 15px;
+    padding: 2px 6px;
+    right: -15px;
+    bottom: 27px;
+    position: absolute;
+}
+
+.main_name_logo ul .drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #f0f2f5;
+}
+.main_name_logo ul .drop:hover{
+    background-color: #d8dbe2;
+}
+
+
