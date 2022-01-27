@@ -1,0 +1,25 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1258px) {
+    .search_field{
+        display: none;
+    }
+    .search_icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f0f2f5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 8px;
+       
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
