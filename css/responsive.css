@@ -23,8 +23,31 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .middle_area ul li:nth-child(5){
+        display: none;
+    }
+    .middle_area ul li:last-child{
+        display: block;
+    }
+    .main_name_logo ul .plus{
+        display: block;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f2f5;
+        border-radius: 50%;
+        
+    }
+    .main_name_logo ul .apps{
+        display: none;
+    }
     main .left_side_area{
         display:none;
+    }
+    .middle_area ul li {
+        margin: 0 0;
     }
 }
 
