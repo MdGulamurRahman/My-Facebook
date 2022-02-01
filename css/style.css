@@ -180,7 +180,9 @@ header{
     opacity: 1;
     transform: translateX(50%px);
 }
-/* main_name_logo style */
+/*==========================
+    main_name_logo style 
+============================*/
 .main_name_logo ul{
     display: flex;
     align-items: center;
@@ -686,4 +688,111 @@ main .left_side_area{
     background-color: #31a24c;
     position: absolute;
     border: 1px solid #fff;
+}
+/*==========================
+     Middle area style 
+============================*/
+.middle_side_area{
+    padding: 80px 90px;
+    background-color: #f0f2f5;
+}
+.inner_story{
+    max-width: 745px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.story{
+    height: 198px;
+    width: 119px;
+    border-radius: 11px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+}
+.inner_story .profile_story{
+    display: flex;
+    flex-direction: column;
+}
+.profile_story .profile{
+    width: 100%;
+    flex-grow: 1;
+    transition: 3s;
+}
+.profile_story .profile img{
+    transition: 0.3s;
+}
+.profile_story .profile:hover img{
+    transform: scale(1.1);
+}
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.create_story{
+    flex-basis: 49px;
+    background-color: #fff;
+    position: relative;
+}
+.create_story{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: center;
+}
+.create_story h4{
+   font-size: 13px;
+   margin-bottom: 10px;
+}
+.create_story .create_add {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(214deg 89% 52%);
+    border: 4px solid hsl(180deg 100% 100%);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.create_story .create_add span{
+   color: hsl(180deg 100% 100%);
+}
+.day_profile img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 3px solid hsl(214deg 89% 52%);
+    position: absolute;
+    top: 11px;
+    left: 11px;
+    z-index: 1000000000000000000000;
+}
+.day_story{
+    width: 100%;
+    height: 100%;
+}
+.day_story img{
+    width: 100%;
+    height: 100%;
+}
+.story_name{
+    position: absolute;
+    bottom: 7px;
+    left: 16px;
+}
+.story_name h4{
+   color: hsl(180deg 100% 100%);
+   font-size: 14px;
+}
+.day_story img{
+    transition: 0.3s;
+}
+.day_story:hover img{
+    transform: scale(1.1);
 }
