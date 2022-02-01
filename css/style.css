@@ -702,6 +702,7 @@ main .left_side_area{
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: relative;
 }
 .story{
     height: 198px;
@@ -710,6 +711,7 @@ main .left_side_area{
     overflow: hidden;
     position: relative;
     box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    cursor: pointer;
 }
 .inner_story .profile_story{
     display: flex;
@@ -771,7 +773,7 @@ main .left_side_area{
     position: absolute;
     top: 11px;
     left: 11px;
-    z-index: 1000000000000000000000;
+    z-index: 1000000;
 }
 .day_story{
     width: 100%;
@@ -795,4 +797,114 @@ main .left_side_area{
 }
 .day_story:hover img{
     transform: scale(1.1);
+}
+.story_arrow {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #dbdddf;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+.story_arrow span{
+    color: #65676b;
+}
+.story_arrow:hover::after {
+    content: attr(data-tag);
+    width: 72px;
+    padding: 8px 20px;
+    background-color: rgba(51, 51, 51, 0.89);
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    right: -36px;
+    bottom: -35px;
+    position: absolute;
+}
+/*======================
+    Activity style 
+========================*/
+.inner_activity{
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    margin-top: 26px;
+    padding: 12px 16px;
+    border-radius: 11px;
+}
+.activity_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity_img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.activity_field{
+    max-width: 420px;
+    height: 40px;
+    width: 100%;
+    background-color: #f0f2f5;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+}
+.activity_field input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+    font-size: 17px;
+    cursor: pointer;
+}
+.activity_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 14px 0 0px;
+}
+.activity_icon div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.activity_icon div h4{
+   color: #65676b;
+}
+.activity_icon div{
+  padding: 6px 16px;
+  border-radius: 8px;
+}
+.activity_icon div:hover{
+  background-color: #f0f2f5;
+}
+.video_icon span{
+   color:  #f3425f;
+   font-size: 30px;
+   margin-right: 5px;
+}
+.photo_icon span{
+   color:  #45bd62;
+   font-size: 30px;
+   margin-right: 5px;
+}
+.feeling_icon span{
+   color:  #f7b928;
+   font-size: 30px;
+   margin-right: 5px;
 }
