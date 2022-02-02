@@ -1068,3 +1068,114 @@ main .left_side_area{
 .main_poster{
     margin-top: 8px;
 }
+/* =====================
+    like react style
+========================*/
+.poster_react{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px 0;
+}
+.like_react_area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like_react_area h4{
+    transform: translateY(-2px);
+    color: #65676b;
+    font-weight: 500;
+}
+.reacts img{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transform: translateY(3px);
+}
+.reacts img:nth-child(1){
+    transform: translateX(6px);
+}
+.reacts img:nth-child(2){
+    transform: translateY(0px);
+}
+.reacts img:nth-child(3){
+    transform: translateX(-6px);
+}
+.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share{
+    transform: translateY(-2px);
+}
+.share a:hover {
+    text-decoration: underline;
+    color: #9e9e9ee8;
+    font-weight: 100;
+}
+.share a h4{
+    margin: 0 6px;
+    color: #65676b;
+    font-weight: 500;
+}
+.extra_separate{
+    padding: 0 16px;
+}
+.comment_box_area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 16px;
+}
+.comment_box_area li a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #65676bd9;
+    font-weight: 600;
+}
+.comment_box_area li a img:nth-child(2){
+    transform: translateY(3px);
+}
+.comment_box_area li a img{
+    color: #65676b;
+    font-weight: 600;
+    margin-right: 8px;
+}
+.comment_box_area li{
+    padding: 8px 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+    position: relative;
+}
+.comment_box_area li:hover{
+    background-color: #f0f2f5;
+}
+.second_poster{
+    width: 100%;
+    margin-top: 15px;
+}
+.second_poster img{
+    width: 100%;
+}
+.poster_name h4 span{
+    font-size: 16px;
+    font-weight: 100;
+    color: #65676b;
+}
+.comment_box_area li:first-child:hover::after {
+    content: "👍❤️🥰😆😮😢😡";
+    font-size: 25px;
+    position: absolute;
+    bottom: 43px;
+    left: -21px;
+    width: 245px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+    padding: 8px 16px;
+    border-radius: 25px;
+    z-index: 1000000;
+    transition: 1s;
+}
