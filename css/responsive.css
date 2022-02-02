@@ -74,6 +74,27 @@
     header{
         padding: 0 2px;
     }
+    .middle_area ul li a {
+        display: inline-block;
+        padding: 4px 15px;
+        border-radius: 8px;
+        position: relative;
+        transition: all 0.3s ease 0s;
+    }
+    .middle_area ul li:hover:after {
+        content: attr(data-tag);
+        outline: 0;
+        border: 0;
+        color: #dadada;
+        background-color: #313131eb;
+        position: absolute;
+        bottom: -42px;
+        left: 0%;
+        padding: 6px 11px;
+        border-radius: 10px;
+        opacity: 1;
+        transform: translateX(50%px);
+    }
     .middle_side_area{
         padding: 80px 5px;
     }
