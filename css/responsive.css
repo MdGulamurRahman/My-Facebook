@@ -49,14 +49,127 @@
     .middle_area ul li {
         margin: 0 0;
     }
+     
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 768px) {
+   
     .middle_area ul li:first-child, li:nth-child(2), li:nth-child(3), li:nth-child(4){
         display: none;
     }
     .right_side_area{
         display: none;
     }
+    .inner_story{
+        width: 100%;
+    }
+    .inner_story .story:nth-child(3){
+        display: none;
+     }
+     
+    
+}
+@media only screen and (max-width: 570px){
+    .middle_side_area{
+        padding: 80px 5px;
+    }
+    .inner_story .story:nth-child(3){
+        display: none;
+    }
+    .story_arrow {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #dbdddf;
+        position: absolute;
+        right: -3px;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        cursor: pointer;
+    }
+    .activity_icon .feeling_icon{
+       display: none;
+    }
+    .create_room button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #216fdb;
+        padding: 8px 11px;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 25px;
+        outline: 0;
+        border: 2px solid #d5e5f4;
+        background-color: white;
+        cursor: pointer;
+    }
+    .inner_room {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: white;
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        margin-top: 20px;
+        padding: 8px 11px;
+        border-radius: 11px;
+        position: relative;
+    }
+    .comment_box_area li:first-child:hover::after {
+        content: "👍❤️🥰😆😮😢😡";
+        font-size: 25px;
+        position: absolute;
+        bottom: 41px;
+        left: -87px;
+        width: 245px;
+        background-color: white;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        padding: 8px 12px;
+        border-radius: 25px;
+        z-index: 1000000;
+        transition: 1s;
+        cursor: pointer;
+    }
+    .story{
+        height: 160px;
+        width: 119px;
+        border-radius: 11px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+        cursor: pointer;
+        margin: 0 5px;
+    }
+    /* =====================
+    customize scrollbar
+ =======================*/
+ /* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    border-radius: 40px;
+  }
+  .middle_side_area:hover::-webkit-scrollbar-thumb {
+    background: #ced0d4;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ced0d4; 
+  }
 }

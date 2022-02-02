@@ -478,9 +478,14 @@ main .left_side_area{
   }
    
   /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #ced0d4;
+  ::-webkit-scrollbar-thumb{
     border-radius: 40px;
+  }
+  .left_side_area:hover::-webkit-scrollbar-thumb {
+    background: #ced0d4;
+  }
+  .right_side_area:hover::-webkit-scrollbar-thumb {
+    background: #ced0d4;
   }
   
   /* Handle on hover */
@@ -1066,7 +1071,11 @@ main .left_side_area{
     color: #1b74e4;
 }
 .main_poster{
+    width: 100%;
     margin-top: 8px;
+}
+iframe{
+    width: 100%;
 }
 /* =====================
     like react style
@@ -1169,13 +1178,14 @@ main .left_side_area{
     content: "👍❤️🥰😆😮😢😡";
     font-size: 25px;
     position: absolute;
-    bottom: 43px;
+    bottom: 41px;
     left: -21px;
     width: 245px;
     background-color: white;
     box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
-    padding: 8px 16px;
+    padding: 8px 12px;
     border-radius: 25px;
     z-index: 1000000;
     transition: 1s;
+    cursor: pointer;
 }
